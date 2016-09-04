@@ -9,7 +9,7 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-copy');
 
     // Default task.
-    grunt.registerTask('default', ['jshint']);
+    grunt.registerTask('default', ['jshint', 'concat']);
 
     // Print a timestamp (useful for when watching)
     grunt.registerTask('timestamp', function() {
@@ -25,15 +25,15 @@ module.exports = function(grunt){
         ' * Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author %>;\n' +
         ' * Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %>\n */\n',
         src: {
-            js: ['lib/*.js']
+            js: ['lib/**/*.js']
         },
         jshint:{
-            files:['gruntFile.js', '<%= src.js %>'],
+            files:['gruntFile.js', '<%= src.js %>', 'test/**/*.js'],
             options:{
                 curly:true,
                 eqeqeq:true,
                 immed:true,
-                latedef:true,
+                latedef:false,
                 newcap:true,
                 noarg:true,
                 sub:true,
@@ -41,6 +41,12 @@ module.exports = function(grunt){
                 eqnull:true,
                 globals:{}
             }
-        }
+        },
+        concat: {
+            dist: {
+              src: ['<%= src.js %>'],
+              dest: 'dist/built.js'
+            }
+          }
         });
 };
