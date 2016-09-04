@@ -1,0 +1,14 @@
+var
+
+module.exports = (function() {
+    var services = {
+        hello:hello
+    };
+
+    return services;
+
+    function hello(){
+        return "hello world";
+    }
+
+})();

@@ -1,0 +1,32 @@
+{
+  "name": "schema-evaluator",
+  "version": "1.0.0",
+  "description": "A powerful tool to sanitize and evaluate JSObject",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luxknight007"
+  },
+  "keywords": [
+    "evaluate",
+    "sanitize",
+    "validate"
+  ],
+  "author": "luxknight <luxknight007@gmail.com> (http://luxknight007.blogspot.com)",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.15.0",
+    "schema-inspector": "^1.6.6"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-recess": "~0.3",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-copy": "~0.4.0",
+    "grunt-contrib-jshint": "~0.2.0",
+    "grunt-contrib-concat": "~0.1.3"
+  }
+}
