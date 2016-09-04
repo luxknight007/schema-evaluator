@@ -16,6 +16,12 @@ function testing(){
                     type: ['string', 'null', 'number'],
                     minLength: 1
                 }
+            },
+            stuff2: {
+                type: 'object',
+                properties: {
+                    name: { type: 'string'}
+                }
             }
         }
     };
@@ -27,7 +33,8 @@ function testing(){
         site1: 'http://google.com',
         site2: 'http://google.com',
         site3: 'http://google.com',
-        stuff: ['JavaScript', null, 1234]
+        stuff: ['JavaScript', null, 1234, 'test'],
+        stuff2: { name: 'sample', description: 'sample description'}
     };
     var result_validate = evaluator.validate(schema, candidate);
     console.log('RESULT VALIDATE ', result_validate);
