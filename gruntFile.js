@@ -45,7 +45,7 @@ module.exports = function(grunt){
         concat: {
             dist: {
               src: ['<%= src.js %>'],
-              dest: 'dist/built.js'
+              dest: 'dist/schema-evaluator.js'
             }
           }
         });
