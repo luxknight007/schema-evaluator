@@ -16,6 +16,10 @@
     "validate"
   ],
   "author": "luxknight <luxknight007@gmail.com> (http://luxknight007.blogspot.com)",
+  "contributors" : [{
+    "name": "John Aspen P. Catingub",
+    "email": "jacatingub.dev.knightmare@gmail.com"
+  }],
   "license": "GPL",
   "dependencies": {
     "lodash": "^4.15.0",
