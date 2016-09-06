@@ -45,9 +45,9 @@ function testing(){
     var result_clean = evaluator.evaluate_clean(schema, candidate);
     console.log('RESULT EVALUATE_CLEAN ', result_clean);
 
-    var schemaResult = evaluator.generateSchema(candidate);
+    var schemaResult = evaluator.generate_schema(candidate);
     console.log('RESULT JSON TO SCHEMA ', schemaResult);
-    console.log('ITEMS ', schemaResult.properties.stuff.items);
+    console.log('ITEMS INSIDE stuff.items', schemaResult.properties.stuff.items);
 }
 
 testing();
