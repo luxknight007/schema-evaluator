@@ -1,6 +1,6 @@
 {
   "name": "schema-evaluator",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A powerful tool to sanitize and evaluate JSObject",
   "main": "index.js",
   "scripts": {
